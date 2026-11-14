@@ -60,7 +60,7 @@ Visualize your tasks on a timeline, track when tasks were due, when they were co
 > [!TIP]
 > Great for spotting patterns in your daily routine and getting a feel for your current rhythm.
 
-<img src="https://raw.githubusercontent.com/BelalAdelDev/taskscape/master/docs/demos/gantt-demo.gif" alt="Gantt Demo">
+<img src="https://raw.githubusercontent.com/BelalAdelDev/taskscape/master/docs/demos/gantt-demo.gif" alt="Gantt Demo" height="800">
 
 - Bars are packed into the fewest possible lanes, and tasks with the same name stay on the same lane *when possible*.
 - Hover a bar to see the full task name, dates, state and tags.
@@ -77,7 +77,7 @@ You'll see grouped overview of recurring tasks, how often tasks appear, their da
 > [!TIP]
 > Perfect for looking back at your progress and seeing how far you've come.
 
-<img src="https://raw.githubusercontent.com/BelalAdelDev/taskscape/master/docs/demos/summary-demo.gif" alt="Summary Demo">
+<img src="https://raw.githubusercontent.com/BelalAdelDev/taskscape/master/docs/demos/summary-demo.gif" height="800" alt="Summary Demo">
 
 
 - ×N is how many times the task appears, 🚀 is its earliest done date and 🏁 is its latest done date (`open` if none is done).
@@ -114,6 +114,7 @@ A task's state comes from its dates and markers:
 
 > [!CAUTION]
 > **Nested Tasks**
+> 
 > Only top-level task lines (`- [ ] ...`) are read. Indented sub-tasks are ignored.
 
 
