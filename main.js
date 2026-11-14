@@ -197,7 +197,7 @@ function assignGroups(tasks, fuzzy = false) {
 /* Summary data (pure)                                                 */
 /* ------------------------------------------------------------------ */
 
-// One row per group: count, first start (earliest due), last end (latest done), state counts.
+// One row per group: count, first done (earliest done), last end (latest done), state counts.
 // Hidden states are left out. Sorted by name (case-insensitive, numbers in natural order).
 function summarizeTasks(tasks, hidden = new Set()) {
   const groups = new Map();
@@ -209,7 +209,7 @@ function summarizeTasks(tasks, hidden = new Set()) {
     g.count++;
     g.states[t.state] = (g.states[t.state] || 0) + 1;
     g.variants.add((t.task || '').trim());
-    if (t.due && (!g.start || t.due < g.start)) g.start = t.due;
+    if (t.done && (!g.start || t.done < g.start)) g.start = t.done;
     if (t.done && (!g.end || t.done > g.end)) g.end = t.done;
   });
   return [...groups.values()]
