@@ -137,7 +137,6 @@
   border: 1px solid var(--ts-border);
   border-radius: var(--radius-m);
   background: var(--ts-panel);
-  scrollbar-width: thin;
 }
 .taskscape-root .ts-ruler {
   position: relative;
