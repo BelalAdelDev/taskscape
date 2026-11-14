@@ -106,16 +106,16 @@ A task's state comes from its dates and markers:
 | 🔴 cancelled | has a ❌ date |
 
 <details>
-
 <summary>Task Icons Corrispond to...</summary>
 ✅ Done date
 ❌ Cancel date
 📅 Due date
 </details>
 
+> [!CAUTION]
+> **Nested Tasks**
+> Only top-level task lines (`- [ ] ...`) are read. Indented sub-tasks are ignored.
 
-> [!CAUTION] Nested Tasks
-> Only top-level task lines (`- [ ] ...`) are read.Indented sub-tasks are ignored.
 
 ### Installation
 
