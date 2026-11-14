@@ -1,0 +1,10 @@
+{
+  "id": "taskscape",
+  "name": "Taskscape",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Visualize your markdown tasks as a Gantt timeline or a grouped summary using a taskscape code block.",
+  "author": "BelalAdelDev",
+  "authorUrl":"https://github.com/BelalAdelDev/",
+  "isDesktopOnly": false
+}
