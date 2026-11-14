@@ -1,5 +1,5 @@
  <p align="center">
-  <img src="https://raw.githubusercontent.com/BelalAdelDev/taskscape/master/docs/images/Clockwork Tasks Logo.png" alt="Taskscape" width="130"/>
+  <img src="https://raw.githubusercontent.com/BelalAdelDev/taskscape/master/docs/images/Taskscape Logo.png" alt="Taskscape" width="130"/>
 </p>
 
 <h1 align="center">Taskscape</h1>
