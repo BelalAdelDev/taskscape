@@ -200,12 +200,26 @@
   line-height: 1.4;
 }
 .taskscape-tip.is-hidden { display: none; }
-.taskscape-tip b {
-  display: block;
+.taskscape-tip .ts-tip-title {
   font-size: var(--font-ui-small);
+  font-weight: 600;
   margin-bottom: 2px;
 }
-.taskscape-tip span { color: var(--text-muted); }
+.taskscape-tip .ts-tip-meta { color: var(--text-muted); }
+.taskscape-tip .ts-tip-hint {
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--text-faint);
+}
+.taskscape-tip .ts-tip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.taskscape-tip .ts-tip-count {
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
 
 /* summary view */
 .taskscape-root .ts-summary {
@@ -228,7 +242,9 @@
   font-size: var(--font-ui-small);
   color: var(--ts-fg);
   overflow-wrap: anywhere;
+  cursor: pointer;
 }
+.taskscape-root .ts-name:hover { text-decoration: underline; }
 .taskscape-root .ts-count {
   font-weight: 700;
   font-variant-numeric: tabular-nums;

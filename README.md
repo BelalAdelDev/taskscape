@@ -13,6 +13,7 @@
   <a href="#usage">Usage</a> •
   <a href="#views">Views</a> •
   <a href="#task-format">Task Format</a> •
+  <a href="#works-well-with-clockwork-tasks">Clockwork Tasks</a> •
   <a href="#installation">Installation</a>
 </p>
 
@@ -20,7 +21,7 @@
 
 Taskscape reads a task file in your vault, works out how long each task stayed open, and draws it. It is useful for habit and self-improvement task lists where you want to see what repeats, what slipped, and how long things took.
 
-### Usage
+## Usage
 
 Add a `taskscape` code block to any note:
 
@@ -49,9 +50,9 @@ end: 2026-09-30
 
 Dates are matched against a task's done date, or its due date if it has no done date. `count` keeps the last N tasks after the date filter is applied.
 
-### Views
+## Views
 
-#### 1. Gantt View
+### 1. Gantt View
 
 *Gantt* draws one bar per task from its due date to its done date (or to today if it is still open).
 
@@ -66,7 +67,7 @@ Visualize your tasks on a timeline, track when tasks were due, when they were co
 - Hover a bar to see the full task name, dates, state and tags.
 - The chart opens scrolled to the latest dates.
 
-#### 2. Summary View
+### 2. Summary View
 
 *Summary* groups repeating tasks into one row each:
 
@@ -86,7 +87,7 @@ You'll see grouped overview of recurring tasks, how often tasks appear, their da
 
 The note **updates automatically** a moment after you save the task file.
 
-## Task format
+## Task Format
 
 Taskscape reads lines in the emoji task format used by the Tasks plugin:
 
@@ -118,16 +119,36 @@ A task's state comes from its dates and markers:
 > Only top-level task lines (`- [ ] ...`) are read. Indented sub-tasks are ignored.
 
 
-### Installation
+## Works well with [Clockwork Tasks](https://community.obsidian.md/plugins/clockwork-tasks)
+
+<img src="https://raw.githubusercontent.com/BelalAdelDev/taskscape/master/docs/images/Clockwork Tasks & Taskscape.png" alt="Clockwork Tasks & Taskscape">
+
+Creating recurring tasks by hand takes time. [Clockwork Tasks](https://community.obsidian.md/plugins/clockwork-tasks), another Obsidian plugin by me, lets you write your routines once and automatically generate their tasks each day.
+
+Taskscape can visualize the tasks Clockwork Tasks creates, so you can build a routine and see your progress over time.
+
+As a personal recommendation, keep daily tasks small—around 5–20 minutes. Schedule more demanding tasks two or three times a week, and consider adding days off. Find the pace that works for you: **your life, your pace**.
+
+## Installation
 
 From the Community plugins browser: search for **Taskscape**, install and enable.
 
 Manually: download `main.js`, `manifest.json` and `styles.css` from the latest release, put them in `<your vault>/.obsidian/plugins/taskscape/`, then reload and enable the plugin.
 
-### Privacy
+<details>
+<summary>Building from source</summary>
+
+1. Clone the repository and open its directory.
+2. Install the dependencies with `npm ci`.
+3. Build the plugin with `npm run build`.
+4. Copy the generated `main.js`, along with `manifest.json` and `styles.css`, into `<your vault>/.obsidian/plugins/taskscape/`.
+
+</details>
+
+## Privacy
 
 Taskscape makes no network requests, collects no telemetry, and only reads the task file named in the code block.
 
-### License
+## License
 
 [MIT](LICENSE)
